@@ -1,0 +1,122 @@
+.login{
+  background:linear-gradient(
+    rgba($primary, .7), 
+    rgba($primary, 1)
+  ), url('../images/Street-Dance-01.jpg') no-repeat center; 
+  background-size:cover;
+  height: 100%;
+  opacity: 95%;
+  position: relative;
+  padding-top: 69px;
+}
+
+.login-sub{
+  color: $complement;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  width:100%;
+}
+
+.login-head{
+  color: $complement;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  width:100%;
+  margin-top: 16px;
+}
+
+
+.login-logo-wrap{
+  width:64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid rgba($complement, 0.3);
+  margin: 0 auto;
+  padding: 2px;
+  box-sizing: border-box;
+  margin-top: 37px;
+
+  .login-logo{
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid $complement;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  
+    .logo {
+      background-color: $complement;
+      -webkit-mask-image: url('../SVGs/logo-cat.svg');
+      mask-image: url('../SVGs/logo-cat.svg');
+      height: 40px;
+      width: 40px;  
+      position: absolute;
+      top: 6px;
+      left: 7px;
+    
+    }
+  }
+}
+
+.login-form{
+  margin-top: 118px;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.login-input{
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding: 2px 15px 2px 34px;
+  border-radius: 20px;
+  border:1px solid #D3C1E5;
+  background: transparent;
+
+  color: #453257;
+
+  &:hover, &:focus{
+    background: rgba(#fff, 0.2);
+  }
+
+  @include placeholder(#AC8EC9);
+}
+
+.login-input-container{
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  .login-img-people{
+    background-color: #D3C1E5;
+    -webkit-mask-image: url('../SVGs/user.svg');
+    mask-image: url('../SVGs/user.svg');
+  }
+  .login-img-password{
+    background-color: #D3C1E5;
+    -webkit-mask-image: url('../SVGs/password.svg');
+    mask-image: url('../SVGs/password.svg');
+  }
+}
+
+.login-icon{
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top:14px;
+  left: 14px;
+}
+
+.btn-login{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
